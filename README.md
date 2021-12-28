@@ -1,4 +1,4 @@
-# bdsp-pokedex-vue
+# BDSP Pokedex
 
 ## Project setup
 ```
