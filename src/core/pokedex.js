@@ -44,6 +44,7 @@ const SORT_EVOLUTION_CHAIN = (pokemon, chain, evoChainId) => {
 }
 
 class Pokedex {
+    // initially used this to fetch data from api.
     /*static GetPokemon = async () => {
         if (store.getters["pokemon"].length < 493) {
             let gen1 = await ApiService.GenerateGetRequest("generation/1");
@@ -115,6 +116,7 @@ class Pokedex {
             return 0;
         });
     }*/
+    // todo make private
     static GetPokemon = async () => {
         if (store.getters["pokemon"].length < 493) {
             let pokemon = await ApiService.GenerateGetRequest("http://localhost/pokedex/bdsp.php", {}, false);
